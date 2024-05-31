@@ -1,7 +1,11 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+import "./globals.css";
+import { Montserrat } from "next/font/google";
+
+const Mont = Montserrat({
+ subsets: ["latin"],
+ weight: ['500', '300', '600'],
+});
 
 export const metadata = {
   title: "My Portfolio",
@@ -11,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${Mont.className}`}>{children}</body>
     </html>
   );
 }

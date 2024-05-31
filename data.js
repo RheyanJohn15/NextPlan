@@ -1,15 +1,16 @@
-const DataText = {
-    appName: "NextPlan",
-    aboutPage: {
-      title: "About Us",
-      description: "Learn more about our project management app."
-    },
-    contactPage: {
-      title: "Contact Us",
-      email: "contact@nextplanner.com",
-      phone: "+1234567890"
-    }
-  };
-  
-  export default DataText;
+const Text = {
+  appName: "NextPlan",
+  login: {
+    title: "Login to NextPlan",
+    subtext: "Streamline Your Project Management Experience",
+    email: "Email",
+    pass: "Password",
+    button: "Login",
+    forgotPassword: "Forgot your password?",
+    signUpLink: "Don't have an account? Sign up here."
+  }
+};
+
+export default Text;
+
   
