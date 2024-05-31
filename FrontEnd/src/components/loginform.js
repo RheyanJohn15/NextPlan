@@ -10,7 +10,7 @@ const MyForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('/api/login', {
+      const response = await fetch('http://localhost:8080/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -19,7 +19,7 @@ const MyForm = () => {
       });
       const data = await response.json();
       console.log(data);
-      // Handle success or error response
+
     } catch (error) {
       console.error('Error submitting form:', error);
       // Handle error
@@ -30,7 +30,7 @@ const MyForm = () => {
     <form  method="POST" className="flex flex-col mt-4 gap-2 w-3/4" onSubmit={handleSubmit}>
       <label htmlFor="email">{Text.login.email}</label>
       <input
-        className="h-9"
+        className="h-9 p-4"
         type="email"
         id="email"
         name="email"
@@ -40,7 +40,7 @@ const MyForm = () => {
       />
       <label htmlFor="password">{Text.login.pass}</label>
       <input
-        className="h-9"
+        className="h-9 p-4"
         type="password"
         id="password"
         name="password"
