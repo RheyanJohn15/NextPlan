@@ -7,7 +7,8 @@ const Text = {
     pass: "Password",
     button: "Login",
     forgotPassword: "Forgot your password?",
-    signUpLink: "Don't have an account? Sign up here."
+    signup: "Don't have an account?",
+    link: " Sign up here.",
   }
 };
 

@@ -1,8 +1,8 @@
 'use client';
 
 import Image from "next/image";
-import Text from "../../data";
-import LogoImage from "../../public/logo.png";
+import Text from "../../../data";
+import LogoImage from "../../../public/logo.png";
 import Form  from "@/components/loginform";
 import Link from 'next/link';
 
